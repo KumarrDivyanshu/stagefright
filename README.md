@@ -1,9 +1,21 @@
-## Python script to generate a malicious MP4 file exploiting the 'stsc' vulnerability (CVE-2015-1538) (#1),
-and start reverse TCP listener on attacker machine.
+## stagefright_exploit.py
 
-## author: vvn (eudemonics)
+Python script to generate a malicious MP4 file exploiting the 'stsc' vulnerability (CVE-2015-1538) (#1),
+and start reverse TCP listener on attacker machine.  
 
+### author: vvn (eudemonics)  
 ### built upon original exploit code from @jduck
+
+usage: ./stagefright.py [-h] [-c CBHOST] [-p CBPORT] [-s SPRAY_ADDR] [-r ROP_PIVOT]
+              [-o OUTPUT_FILE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c CBHOST, --connectback-host CBHOST (default is whatever ifconfig tells it)
+  -p CBPORT, --connectback-port CBPORT (default is 54321)
+  -s SPRAY_ADDR, --spray-address SPRAY_ADDR
+  -r ROP_PIVOT, --rop-pivot ROP_PIVOT
+  -o OUTPUT_FILE, --output-file OUTPUT_FILE
 
 Original README:
 
